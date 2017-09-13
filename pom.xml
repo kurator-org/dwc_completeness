@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
     <groupId>org.datakurator</groupId>
 	<artifactId>dwc_completeness</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>dwc_completeness</name>
 	<description>Kurator library for assessing completeness (in terms of the Fittness for Use Framework) of Darwin Core terms in a data resource.</description>
 	<url>https://wiki.datakurator.net/</url>
