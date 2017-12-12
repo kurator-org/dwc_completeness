@@ -13,7 +13,7 @@ public class ConverterUtil {
         String implementation = "https://github.com/kurator-org/dwc_completeness/blob/master/src/main/java/org/datakurator/dwc_comp/CompletenessQC.java";
         Map<String, String> terms = dwcTermsMapping();
 
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/main/java/org/datakurator/dwc_comp/CompletenessQC.java")));
+        BufferedReader reader = new BufferedReader(new FileReader(new File("CompletenessQC.java")));
         StringBuilder sb = new StringBuilder();
         StringBuilder csv = new StringBuilder();
 
@@ -75,11 +75,12 @@ public class ConverterUtil {
                             }
                         }
 
-                        csv.append("\"" + description + "\",\"Measure\",\"SingleRecord\",\"Completeness\",");
+                        csv.append("\"" + description + "\",");
 
                     } else if (line.contains("@Specification")) {
                         line = line.substring(line.indexOf("\"")+1);
                         String specification = line.substring(0, line.indexOf("\""));
+                        csv.append("\"" + specification + "\",\"Measure\",\"SingleRecord\",\"Completeness\",");
                     } else if (line.contains("@PreEnhancement") ||
                             line.contains("@PostEnhancement") ||
                             line.contains("@Enhancement")) {
@@ -102,12 +103,12 @@ public class ConverterUtil {
                 sb.append(line + "\n");
             }
         }
-        //System.out.println(csv.toString());
-        FileOutputStream out = new FileOutputStream(new File("CompletenessQC.java"));
-        out.write(sb.toString().getBytes());
-        out.close();
+        System.out.println(csv.toString());
+        //FileOutputStream out = new FileOutputStream(new File("CompletenessQC.java"));
+        //out.write(sb.toString().getBytes());
+        //out.close();
 
-        System.out.println(sb.toString());
+        //System.out.println(sb.toString());
     }
 
     private static Map<String, String> dwcTermsMapping() {
