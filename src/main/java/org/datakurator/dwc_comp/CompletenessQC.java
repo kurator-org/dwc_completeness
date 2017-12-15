@@ -35,7 +35,7 @@ public class CompletenessQC {
 	private static final Log logger = LogFactory.getLog(CompletenessQC.class);
 
 	@DQProvides("2f32a5b5-6649-43da-b820-5005dea846e0")
-	public static DQResponse<CompletenessValue> isBasisOfRecordSingleRecordComplete(@DQParam("basisOfRecord") String basisOfRecord) {
+	public static DQResponse<CompletenessValue> isBasisOfRecordSingleRecordComplete(@DQParam("dwc:basisOfRecord") String basisOfRecord) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(basisOfRecord)) {
@@ -51,7 +51,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("497a42f1-3a03-4c00-aa40-89166bcf4ff3")
-	public static DQResponse<CompletenessValue> isClassSingleRecordComplete(@DQParam("class") String phylclass) {
+	public static DQResponse<CompletenessValue> isClassSingleRecordComplete(@DQParam("dwc:class") String phylclass) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(phylclass)) {
@@ -67,7 +67,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("c008761c-0421-4303-8c22-9fb531747836")
-	public static DQResponse<CompletenessValue> isContinentSingleRecordComplete(@DQParam("continent") String continent) {
+	public static DQResponse<CompletenessValue> isContinentSingleRecordComplete(@DQParam("dwc:continent") String continent) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(continent)) {
@@ -83,7 +83,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("27cf8f08-402d-4d88-8d87-98adfd32ac15")
-	public static DQResponse<CompletenessValue> isCoordinatePrecisionSingleRecordComplete(@DQParam("coordinatePrecision") String coordinatePrecision) {
+	public static DQResponse<CompletenessValue> isCoordinatePrecisionSingleRecordComplete(@DQParam("dwc:coordinatePrecision") String coordinatePrecision) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(coordinatePrecision)) {
@@ -99,7 +99,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("3badf459-d7d2-476c-8618-26308b5638a3")
-	public static DQResponse<CompletenessValue> isCoordinateUncertantyInMetersSingleRecordComplete(@DQParam("coordinateUncertantyInMeters") String coordinateUncertantyInMeters) {
+	public static DQResponse<CompletenessValue> isCoordinateUncertantyInMetersSingleRecordComplete(@DQParam("dwc:coordinateUncertantyInMeters") String coordinateUncertantyInMeters) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(coordinateUncertantyInMeters)) {
@@ -115,7 +115,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("77f3df14-6f9b-466a-be72-44b2cd3b84de")
-	public static DQResponse<CompletenessValue> isCountrySingleRecordComplete(@DQParam("country") String country) {
+	public static DQResponse<CompletenessValue> isCountrySingleRecordComplete(@DQParam("dwc:country") String country) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(country)) {
@@ -131,7 +131,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("026ff557-4d48-48e8-b9b8-5f8f26177b51")
-	public static DQResponse<CompletenessValue> isCountryCodeSingleRecordComplete(@DQParam("countryCode") String countryCode) {
+	public static DQResponse<CompletenessValue> isCountryCodeSingleRecordComplete(@DQParam("dwc:countryCode") String countryCode) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(countryCode)) {
@@ -147,7 +147,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("9a9dda02-0f06-42ef-90b6-0367d589fb3a")
-	public static DQResponse<CompletenessValue> isCountySingleRecordComplete(@DQParam("county") String county) {
+	public static DQResponse<CompletenessValue> isCountySingleRecordComplete(@DQParam("dwc:county") String county) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(county)) {
@@ -163,7 +163,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("5fe7e63e-2b33-40db-869d-d9946138bbec")
-	public static DQResponse<CompletenessValue> isDataGeneralizationsSingleRecordComplete(@DQParam("dataGeneralizations") String dataGeneralizations) {
+	public static DQResponse<CompletenessValue> isDataGeneralizationsSingleRecordComplete(@DQParam("dwc:dataGeneralizations") String dataGeneralizations) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(dataGeneralizations)) {
@@ -179,7 +179,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("9d149637-f3d5-4ceb-a077-79fa41857fee")
-	public static DQResponse<CompletenessValue> isDateIdentifiedSingleRecordComplete(@DQParam("dateIdentified") String dateIdentified) {
+	public static DQResponse<CompletenessValue> isDateIdentifiedSingleRecordComplete(@DQParam("dwc:dateIdentified") String dateIdentified) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(dateIdentified)) {
@@ -195,7 +195,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("826500f7-05d4-4969-a0a8-91c41a2951ce")
-	public static DQResponse<CompletenessValue> isDaySingleRecordComplete(@DQParam("day") String day) {
+	public static DQResponse<CompletenessValue> isDaySingleRecordComplete(@DQParam("dwc:day") String day) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(day)) {
@@ -259,7 +259,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("9357dd62-be48-4df1-b024-06a3d2551a79")
-	public static DQResponse<CompletenessValue> isDecimalLatitudeSingleRecordComplete(@DQParam("decimalLatitude") String decimalLatitude) {
+	public static DQResponse<CompletenessValue> isDecimalLatitudeSingleRecordComplete(@DQParam("dwc:decimalLatitude") String decimalLatitude) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(decimalLatitude)) {
@@ -275,7 +275,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("25823f44-d9dc-406d-ac5e-6a4d1f726f55")
-	public static DQResponse<CompletenessValue> isDecimalLongitudeSingleRecordComplete(@DQParam("decimalLongitude") String decimalLongitude) {
+	public static DQResponse<CompletenessValue> isDecimalLongitudeSingleRecordComplete(@DQParam("dwc:decimalLongitude") String decimalLongitude) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(decimalLongitude)) {
@@ -291,7 +291,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("6b1d1225-8a72-465a-9be5-7cb2b5323631")
-	public static DQResponse<CompletenessValue> isDispositionSingleRecordComplete(@DQParam("disposition") String disposition) {
+	public static DQResponse<CompletenessValue> isDispositionSingleRecordComplete(@DQParam("dwc:disposition") String disposition) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(disposition)) {
@@ -307,7 +307,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("8e257987-dd37-4959-a250-061524cfcb03")
-	public static DQResponse<CompletenessValue> isEndDayOfYearSingleRecordComplete(@DQParam("endDayOfYear") String endDayOfYear) {
+	public static DQResponse<CompletenessValue> isEndDayOfYearSingleRecordComplete(@DQParam("dwc:endDayOfYear") String endDayOfYear) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(endDayOfYear)) {
@@ -323,7 +323,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("197b673e-a1e0-4a9a-923d-8bde0be5d063")
-	public static DQResponse<CompletenessValue> isEstablishmentMeansSingleRecordComplete(@DQParam("establishmentMeans") String establishmentMeans) {
+	public static DQResponse<CompletenessValue> isEstablishmentMeansSingleRecordComplete(@DQParam("dwc:establishmentMeans") String establishmentMeans) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(establishmentMeans)) {
@@ -339,7 +339,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("ac109e78-ab36-4469-b12e-6190169987c6")
-	public static DQResponse<CompletenessValue> isEventDateSingleRecordComplete(@DQParam("eventDate") String eventDate) {
+	public static DQResponse<CompletenessValue> isEventDateSingleRecordComplete(@DQParam("dwc:eventDate") String eventDate) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(eventDate)) {
@@ -355,7 +355,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("4fb70443-0796-4543-a254-251e4415f468")
-	public static DQResponse<CompletenessValue> isEventTimeSingleRecordComplete(@DQParam("eventTime") String eventTime) {
+	public static DQResponse<CompletenessValue> isEventTimeSingleRecordComplete(@DQParam("dwc:eventTime") String eventTime) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(eventTime)) {
@@ -371,7 +371,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("5a14e579-8789-4ea8-8de8-ec937033584e")
-	public static DQResponse<CompletenessValue> isFamilySingleRecordComplete(@DQParam("family") String family) {
+	public static DQResponse<CompletenessValue> isFamilySingleRecordComplete(@DQParam("dwc:family") String family) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(family)) {
@@ -387,7 +387,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("d54866ad-4cf7-4195-99c4-b241d799b470")
-	public static DQResponse<CompletenessValue> isFootprintWKTSingleRecordComplete(@DQParam("footprintWKT") String footprintWKT) {
+	public static DQResponse<CompletenessValue> isFootprintWKTSingleRecordComplete(@DQParam("dwc:footprintWKT") String footprintWKT) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(footprintWKT)) {
@@ -403,7 +403,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("19cd65d9-e924-4a44-9927-4ff825da4593")
-	public static DQResponse<CompletenessValue> isGenusSingleRecordComplete(@DQParam("genus") String genus) {
+	public static DQResponse<CompletenessValue> isGenusSingleRecordComplete(@DQParam("dwc:genus") String genus) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(genus)) {
@@ -419,7 +419,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e5e5d6cd-a120-4910-9bf8-1e6de5605718")
-	public static DQResponse<CompletenessValue> isGeodeticDatumSingleRecordComplete(@DQParam("geodeticDatum") String geodeticDatum) {
+	public static DQResponse<CompletenessValue> isGeodeticDatumSingleRecordComplete(@DQParam("dwc:geodeticDatum") String geodeticDatum) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(geodeticDatum)) {
@@ -435,7 +435,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("c7cfb176-234e-4e30-aab0-6730769dcb0a")
-	public static DQResponse<CompletenessValue> isGeoreferenceDateSingleRecordComplete(@DQParam("georeferenceDate") String georeferenceDate) {
+	public static DQResponse<CompletenessValue> isGeoreferenceDateSingleRecordComplete(@DQParam("dwc:georeferenceDate") String georeferenceDate) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(georeferenceDate)) {
@@ -451,7 +451,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("09c48400-dd82-42f1-a605-a2035be8eb9e")
-	public static DQResponse<CompletenessValue> isGeoreferenceVerificationStatusSingleRecordComplete(@DQParam("georeferenceVerificationStatus") String georeferenceVerificationStatus) {
+	public static DQResponse<CompletenessValue> isGeoreferenceVerificationStatusSingleRecordComplete(@DQParam("dwc:georeferenceVerificationStatus") String georeferenceVerificationStatus) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(georeferenceVerificationStatus)) {
@@ -467,7 +467,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("00e014d3-2556-4cf7-a70a-dac35d7260d7")
-	public static DQResponse<CompletenessValue> isHigherClassificationSingleRecordComplete(@DQParam("higherClassification") String higherClassification) {
+	public static DQResponse<CompletenessValue> isHigherClassificationSingleRecordComplete(@DQParam("dwc:higherClassification") String higherClassification) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(higherClassification)) {
@@ -483,7 +483,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("4897044e-1453-4800-ba69-6a00e7e60e51")
-	public static DQResponse<CompletenessValue> isHigherGeographySingleRecordComplete(@DQParam("higherGeography") String higherGeography) {
+	public static DQResponse<CompletenessValue> isHigherGeographySingleRecordComplete(@DQParam("dwc:higherGeography") String higherGeography) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(higherGeography)) {
@@ -499,7 +499,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e7781304-5579-4827-aa37-704f67269b11")
-	public static DQResponse<CompletenessValue> isIdentificationQualifierSingleRecordComplete(@DQParam("identificationQualifier") String identificationQualifier) {
+	public static DQResponse<CompletenessValue> isIdentificationQualifierSingleRecordComplete(@DQParam("dwc:identificationQualifier") String identificationQualifier) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(identificationQualifier)) {
@@ -515,7 +515,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("ffb325a0-49c9-4e25-b42f-fac8db38dfd6")
-	public static DQResponse<CompletenessValue> isIndividualCountSingleRecordComplete(@DQParam("individualCount") String individualCount) {
+	public static DQResponse<CompletenessValue> isIndividualCountSingleRecordComplete(@DQParam("dwc:individualCount") String individualCount) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(individualCount)) {
@@ -531,7 +531,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("b41020ce-3754-4021-902b-8b2a13bafd1a")
-	public static DQResponse<CompletenessValue> isInfraspecificEpithetSingleRecordComplete(@DQParam("infraspecificEpithet") String infraspecificEpithet) {
+	public static DQResponse<CompletenessValue> isInfraspecificEpithetSingleRecordComplete(@DQParam("dwc:infraspecificEpithet") String infraspecificEpithet) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(infraspecificEpithet)) {
@@ -547,7 +547,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("84f78541-81a8-44a0-a650-ea6d0e18f18e")
-	public static DQResponse<CompletenessValue> isIslandSingleRecordComplete(@DQParam("island") String island) {
+	public static DQResponse<CompletenessValue> isIslandSingleRecordComplete(@DQParam("dwc:island") String island) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(island)) {
@@ -563,7 +563,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("458603eb-0ed1-443b-8a1b-99f44620d399")
-	public static DQResponse<CompletenessValue> isIslandGroupSingleRecordComplete(@DQParam("islandGroup") String islandGroup) {
+	public static DQResponse<CompletenessValue> isIslandGroupSingleRecordComplete(@DQParam("dwc:islandGroup") String islandGroup) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(islandGroup)) {
@@ -579,7 +579,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e83e093d-b28e-489a-acc6-5c8b0fb47a08")
-	public static DQResponse<CompletenessValue> isKingdomSingleRecordComplete(@DQParam("kingdom") String kingdom) {
+	public static DQResponse<CompletenessValue> isKingdomSingleRecordComplete(@DQParam("dwc:kingdom") String kingdom) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(kingdom)) {
@@ -595,7 +595,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e8b20ac3-e9c4-49cf-a816-d92faaa5faa7")
-	public static DQResponse<CompletenessValue> isLifeStageSingleRecordComplete(@DQParam("lifeStage") String lifeStage) {
+	public static DQResponse<CompletenessValue> isLifeStageSingleRecordComplete(@DQParam("dwc:lifeStage") String lifeStage) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(lifeStage)) {
@@ -611,7 +611,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("807a29e3-dd2c-4c2a-8c12-da97b1749f93")
-	public static DQResponse<CompletenessValue> isLocalitySingleRecordComplete(@DQParam("locality") String locality) {
+	public static DQResponse<CompletenessValue> isLocalitySingleRecordComplete(@DQParam("dwc:locality") String locality) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(locality)) {
@@ -627,7 +627,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e0814fc2-73db-4244-a538-fde458c904ec")
-	public static DQResponse<CompletenessValue> isMaximumDepthInMetersSingleRecordComplete(@DQParam("maximumDepthInMeters") String maximumDepthInMeters) {
+	public static DQResponse<CompletenessValue> isMaximumDepthInMetersSingleRecordComplete(@DQParam("dwc:maximumDepthInMeters") String maximumDepthInMeters) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(maximumDepthInMeters)) {
@@ -643,7 +643,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e66c7d1f-1b3d-43a2-b3ab-9f45be0f7168")
-	public static DQResponse<CompletenessValue> isMaximumElevationInMetersSingleRecordComplete(@DQParam("maximumElevationInMeters") String maximumElevationInMeters) {
+	public static DQResponse<CompletenessValue> isMaximumElevationInMetersSingleRecordComplete(@DQParam("dwc:maximumElevationInMeters") String maximumElevationInMeters) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(maximumElevationInMeters)) {
@@ -659,7 +659,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("3f26b083-4b8b-409b-9036-ee1db7c49938")
-	public static DQResponse<CompletenessValue> isMinimumDepthInMetersSingleRecordComplete(@DQParam("minimumDepthInMeters") String minimumDepthInMeters) {
+	public static DQResponse<CompletenessValue> isMinimumDepthInMetersSingleRecordComplete(@DQParam("dwc:minimumDepthInMeters") String minimumDepthInMeters) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(minimumDepthInMeters)) {
@@ -675,7 +675,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("3b2d48b7-4949-4a03-833c-545c7ba6be49")
-	public static DQResponse<CompletenessValue> isMinimumElevationInMetersSingleRecordComplete(@DQParam("minimumElevationInMeters") String minimumElevationInMeters) {
+	public static DQResponse<CompletenessValue> isMinimumElevationInMetersSingleRecordComplete(@DQParam("dwc:minimumElevationInMeters") String minimumElevationInMeters) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(minimumElevationInMeters)) {
@@ -691,7 +691,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("d950775d-70e0-4106-8369-8d2a890fcb34")
-	public static DQResponse<CompletenessValue> isMonthSingleRecordComplete(@DQParam("month") String month) {
+	public static DQResponse<CompletenessValue> isMonthSingleRecordComplete(@DQParam("dwc:month") String month) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(month)) {
@@ -707,7 +707,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("bf0475a3-7ae0-4289-baa0-e890562d4560")
-	public static DQResponse<CompletenessValue> isMunicipalitySingleRecordComplete(@DQParam("municipality") String municipality) {
+	public static DQResponse<CompletenessValue> isMunicipalitySingleRecordComplete(@DQParam("dwc:municipality") String municipality) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(municipality)) {
@@ -723,7 +723,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("806fe7e3-daf4-43bb-8f9c-29948c02e230")
-	public static DQResponse<CompletenessValue> isNamePublishedInYearSingleRecordComplete(@DQParam("namePublishedInYear") String namePublishedInYear) {
+	public static DQResponse<CompletenessValue> isNamePublishedInYearSingleRecordComplete(@DQParam("dwc:namePublishedInYear") String namePublishedInYear) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(namePublishedInYear)) {
@@ -739,7 +739,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("93d2dc26-3c55-49ae-aa77-cf9ff882cfa5")
-	public static DQResponse<CompletenessValue> isOccurrenceIDSingleRecordComplete(@DQParam("occurrenceID") String occurrenceID) {
+	public static DQResponse<CompletenessValue> isOccurrenceIDSingleRecordComplete(@DQParam("dwc:occurrenceID") String occurrenceID) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(occurrenceID)) {
@@ -755,7 +755,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e091d3a9-2bf4-4f4c-80a6-9aeaf9f8c700")
-	public static DQResponse<CompletenessValue> isOccurrenceStatusSingleRecordComplete(@DQParam("occurrenceStatus") String occurrenceStatus) {
+	public static DQResponse<CompletenessValue> isOccurrenceStatusSingleRecordComplete(@DQParam("dwc:occurrenceStatus") String occurrenceStatus) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(occurrenceStatus)) {
@@ -771,7 +771,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("1a77cdc6-adda-4132-8086-ad0618ca5b1f")
-	public static DQResponse<CompletenessValue> isOrderSingleRecordComplete(@DQParam("order") String order) {
+	public static DQResponse<CompletenessValue> isOrderSingleRecordComplete(@DQParam("dwc:order") String order) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(order)) {
@@ -787,7 +787,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("cba540ec-8176-4d73-b6e7-48da13c97559")
-	public static DQResponse<CompletenessValue> isPhylumSingleRecordComplete(@DQParam("phylum") String phylum) {
+	public static DQResponse<CompletenessValue> isPhylumSingleRecordComplete(@DQParam("dwc:phylum") String phylum) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(phylum)) {
@@ -803,7 +803,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("65df1295-18eb-4e58-9f10-73b57883857f")
-	public static DQResponse<CompletenessValue> isPreparationsSingleRecordComplete(@DQParam("preparations") String preparations) {
+	public static DQResponse<CompletenessValue> isPreparationsSingleRecordComplete(@DQParam("dwc:preparations") String preparations) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(preparations)) {
@@ -819,7 +819,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("565a049b-9b51-48ba-83c2-ec3d6e9f5939")
-	public static DQResponse<CompletenessValue> isRecordedBySingleRecordComplete(@DQParam("recordedBy") String recordedBy) {
+	public static DQResponse<CompletenessValue> isRecordedBySingleRecordComplete(@DQParam("dwc:recordedBy") String recordedBy) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(recordedBy)) {
@@ -835,7 +835,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("35a8a879-04f0-48cc-a6f4-846c1917583b")
-	public static DQResponse<CompletenessValue> isRecordNumberSingleRecordComplete(@DQParam("recordNumber") String recordNumber) {
+	public static DQResponse<CompletenessValue> isRecordNumberSingleRecordComplete(@DQParam("dwc:recordNumber") String recordNumber) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(recordNumber)) {
@@ -851,7 +851,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("9f641504-713b-4053-bf10-196fd0852819")
-	public static DQResponse<CompletenessValue> isRelationshipOfResourceSingleRecordComplete(@DQParam("relationshipOfResource") String relationshipOfResource) {
+	public static DQResponse<CompletenessValue> isRelationshipOfResourceSingleRecordComplete(@DQParam("dwc:relationshipOfResource") String relationshipOfResource) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(relationshipOfResource)) {
@@ -867,7 +867,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("7a37cd18-a1b2-46ed-866c-c73e2347f6cb")
-	public static DQResponse<CompletenessValue> isReproductiveConditionSingleRecordComplete(@DQParam("reproductiveCondition") String reproductiveCondition) {
+	public static DQResponse<CompletenessValue> isReproductiveConditionSingleRecordComplete(@DQParam("dwc:reproductiveCondition") String reproductiveCondition) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(reproductiveCondition)) {
@@ -883,7 +883,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("a0a7452d-ce1c-4b2e-9407-94221c60c44a")
-	public static DQResponse<CompletenessValue> isScientificNameSingleRecordComplete(@DQParam("scientificName") String scientificName) {
+	public static DQResponse<CompletenessValue> isScientificNameSingleRecordComplete(@DQParam("dwc:scientificName") String scientificName) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(scientificName)) {
@@ -899,7 +899,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("a2268d72-fb28-4656-9575-bd33a99420d9")
-	public static DQResponse<CompletenessValue> isScientificNameAuthorshipSingleRecordComplete(@DQParam("scientificNameAuthorship") String scientificNameAuthorship) {
+	public static DQResponse<CompletenessValue> isScientificNameAuthorshipSingleRecordComplete(@DQParam("dwc:scientificNameAuthorship") String scientificNameAuthorship) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(scientificNameAuthorship)) {
@@ -915,7 +915,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("aafde1a2-2846-47bc-afb4-199b3ebd355a")
-	public static DQResponse<CompletenessValue> isSexSingleRecordComplete(@DQParam("sex") String sex) {
+	public static DQResponse<CompletenessValue> isSexSingleRecordComplete(@DQParam("dwc:sex") String sex) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(sex)) {
@@ -931,7 +931,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("9870a318-9377-4dd8-b0c2-805327057883")
-	public static DQResponse<CompletenessValue> isSpecificEpithetSingleRecordComplete(@DQParam("specificEpithet") String specificEpithet) {
+	public static DQResponse<CompletenessValue> isSpecificEpithetSingleRecordComplete(@DQParam("dwc:specificEpithet") String specificEpithet) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(specificEpithet)) {
@@ -947,7 +947,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("d2fdb144-faa7-4687-9c52-9e3eba56472b")
-	public static DQResponse<CompletenessValue> isStartDayOfYearSingleRecordComplete(@DQParam("startDayOfYear") String startDayOfYear) {
+	public static DQResponse<CompletenessValue> isStartDayOfYearSingleRecordComplete(@DQParam("dwc:startDayOfYear") String startDayOfYear) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(startDayOfYear)) {
@@ -963,7 +963,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("c020d212-f97d-46f9-8f60-ce85937d340f")
-	public static DQResponse<CompletenessValue> isStateProvinceSingleRecordComplete(@DQParam("stateProvince") String stateProvince) {
+	public static DQResponse<CompletenessValue> isStateProvinceSingleRecordComplete(@DQParam("dwc:stateProvince") String stateProvince) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(stateProvince)) {
@@ -979,7 +979,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("ba82ef8a-ab57-4ceb-a1f6-25411fe7a89f")
-	public static DQResponse<CompletenessValue> isSubgenusSingleRecordComplete(@DQParam("subgenus") String subgenus) {
+	public static DQResponse<CompletenessValue> isSubgenusSingleRecordComplete(@DQParam("dwc:subgenus") String subgenus) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(subgenus)) {
@@ -995,7 +995,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("13b2314d-2203-416a-ac1f-1483282d6d2b")
-	public static DQResponse<CompletenessValue> isTaxonRankSingleRecordComplete(@DQParam("taxonRank") String taxonRank) {
+	public static DQResponse<CompletenessValue> isTaxonRankSingleRecordComplete(@DQParam("dwc:taxonRank") String taxonRank) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(taxonRank)) {
@@ -1011,7 +1011,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("762921f7-6bad-4cbf-87d8-02b40dd389dd")
-	public static DQResponse<CompletenessValue> isTypeStatusSingleRecordComplete(@DQParam("typeStatus") String typeStatus) {
+	public static DQResponse<CompletenessValue> isTypeStatusSingleRecordComplete(@DQParam("dwc:typeStatus") String typeStatus) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(typeStatus)) {
@@ -1027,7 +1027,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("c7a2d7c3-d070-4a04-b085-b0eacb434ff4")
-	public static DQResponse<CompletenessValue> isVerbatimCoordinatesSingleRecordComplete(@DQParam("verbatimCoordinates") String verbatimCoordinates) {
+	public static DQResponse<CompletenessValue> isVerbatimCoordinatesSingleRecordComplete(@DQParam("dwc:verbatimCoordinates") String verbatimCoordinates) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimCoordinates)) {
@@ -1043,7 +1043,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("45c96ed4-7ced-4160-9aa6-b2ba8d92b6ae")
-	public static DQResponse<CompletenessValue> isVerbatimDepthSingleRecordComplete(@DQParam("verbatimDepth") String verbatimDepth) {
+	public static DQResponse<CompletenessValue> isVerbatimDepthSingleRecordComplete(@DQParam("dwc:verbatimDepth") String verbatimDepth) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimDepth)) {
@@ -1059,7 +1059,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("2be10ba0-fdcc-49ef-9da4-4d6f5f24e5bc")
-	public static DQResponse<CompletenessValue> isVerbatimElevationSingleRecordComplete(@DQParam("verbatimElevation") String verbatimElevation) {
+	public static DQResponse<CompletenessValue> isVerbatimElevationSingleRecordComplete(@DQParam("dwc:verbatimElevation") String verbatimElevation) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimElevation)) {
@@ -1075,7 +1075,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("3faa9931-7787-49e7-a5bc-60bb67f385e7")
-	public static DQResponse<CompletenessValue> isVerbatimEventDateSingleRecordComplete(@DQParam("verbatimEventDate") String verbatimEventDate) {
+	public static DQResponse<CompletenessValue> isVerbatimEventDateSingleRecordComplete(@DQParam("dwc:verbatimEventDate") String verbatimEventDate) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimEventDate)) {
@@ -1091,7 +1091,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("f6cf6312-d98e-434c-be85-25ae91a45b7a")
-	public static DQResponse<CompletenessValue> isVerbatimLatitudeSingleRecordComplete(@DQParam("verbatimLatitude") String verbatimLatitude) {
+	public static DQResponse<CompletenessValue> isVerbatimLatitudeSingleRecordComplete(@DQParam("dwc:verbatimLatitude") String verbatimLatitude) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimLatitude)) {
@@ -1107,7 +1107,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("5b5478c3-340b-4b43-80f6-ce20c3307023")
-	public static DQResponse<CompletenessValue> isVerbatimLongitudeSingleRecordComplete(@DQParam("verbatimLongitude") String verbatimLongitude) {
+	public static DQResponse<CompletenessValue> isVerbatimLongitudeSingleRecordComplete(@DQParam("dwc:verbatimLongitude") String verbatimLongitude) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimLongitude)) {
@@ -1123,7 +1123,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("72709e74-e1fd-435c-9230-5be9446639f9")
-	public static DQResponse<CompletenessValue> isVerbatimSRSSingleRecordComplete(@DQParam("verbatimSRS") String verbatimSRS) {
+	public static DQResponse<CompletenessValue> isVerbatimSRSSingleRecordComplete(@DQParam("dwc:verbatimSRS") String verbatimSRS) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(verbatimSRS)) {
@@ -1139,7 +1139,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("174c1bf3-9f54-4b9b-92b0-8611cb675f81")
-	public static DQResponse<CompletenessValue> isVernacularNameSingleRecordComplete(@DQParam("vernacularName") String vernacularName) {
+	public static DQResponse<CompletenessValue> isVernacularNameSingleRecordComplete(@DQParam("dwc:vernacularName") String vernacularName) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(vernacularName)) {
@@ -1155,7 +1155,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("d0e9826f-72d2-408c-a071-1515d2204894")
-	public static DQResponse<CompletenessValue> isWaterBodySingleRecordComplete(@DQParam("waterBody") String waterBody) {
+	public static DQResponse<CompletenessValue> isWaterBodySingleRecordComplete(@DQParam("dwc:waterBody") String waterBody) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(waterBody)) {
@@ -1171,7 +1171,7 @@ public class CompletenessQC {
 
 
 	@DQProvides("e139d0e5-9772-459a-bf2a-3c017f9fbdeb")
-	public static DQResponse<CompletenessValue> isYearSingleRecordComplete(@DQParam("year") String year) {
+	public static DQResponse<CompletenessValue> isYearSingleRecordComplete(@DQParam("dwc:year") String year) {
 		DQResponse<CompletenessValue> result = new DQResponse<>();
 		result.setResultState(ResultState.NOT_RUN);
 		if (CompletenessUtils.hasValue(year)) {
